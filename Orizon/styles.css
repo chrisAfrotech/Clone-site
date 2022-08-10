@@ -1,0 +1,78 @@
+.preloader{
+    position:fixed;
+    top:0;
+    left: 0;
+    background-color: aliceblue;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+/* .dispear{
+    animation: vanish 1s forwards;
+}
+@keyframes vanish {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+} */
+
+
+/* .logo-orizon{
+    background-image: url("https://assets.website-files.com/5d27763c46ba9e561…d1cc08228_5d5eaa386e0dbcf110aac425_logo%20ori.png");
+    background-size: cover;
+} */
+.text-slide li{
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(10) infinite;
+}
+@keyframes slide {
+    100%{
+        top:-360px;
+    }
+}
+.feature-project{
+    margin-top: 10px;
+    animation: apparition 1.2s ease-out;
+}
+@keyframes apparition {
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.talent-card{
+    position: relative;
+    background-image: url("./images/background-purple.png");
+    background-size: cover;
+    transform-style: preserve-3d;
+
+}
+.video-accueil{
+    transform-style: preserve-3d;
+    transform:scale(1,1);
+}
+
+.video-accueil .text-star{
+    transform-style: preserve-3d;
+}
+.aside-menu{
+    background-image: url("./images/aside-back.svg");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+#aside-menu{
+    display: none;
+    transform-origin: right;
+    transition: 1s;
+    transform: translateX(20px);
+}
